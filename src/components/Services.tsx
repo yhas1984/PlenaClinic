@@ -35,7 +35,7 @@ export default function Services() {
   return (
     <section id="servicios" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-on-scroll">
           <p className="text-primary tracking-widest uppercase font-medium mb-3">
             Nuestros Servicios
           </p>
@@ -54,7 +54,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-bg-cream rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className={`group bg-bg-cream rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 animate-on-scroll delay-${index + 1}`}
             >
               <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 {service.icon}

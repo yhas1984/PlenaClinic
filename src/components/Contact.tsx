@@ -1,8 +1,12 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
 export default function Contact() {
   return (
     <section id="contacto" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-on-scroll">
           <p className="text-primary tracking-widest uppercase font-medium mb-3">
             Contáctanos
           </p>
@@ -17,12 +21,12 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           <a
             href="https://wa.me/584146421700?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100"
+            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
           >
             <div className="w-16 h-16 bg-whatsapp/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-whatsapp/20 transition-colors">
               <svg className="w-8 h-8 text-whatsapp" fill="currentColor" viewBox="0 0 24 24">
@@ -35,7 +39,7 @@ export default function Contact() {
 
           <a
             href="mailto:plenaclinicve@gmail.com"
-            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100"
+            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
           >
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
               <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +54,7 @@ export default function Contact() {
             href="https://www.instagram.com/plena.clinic"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100"
+            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
           >
             <div className="w-16 h-16 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:from-purple-500/20 group-hover:to-pink-500/20 transition-colors">
               <svg className="w-8 h-8 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
@@ -61,7 +65,7 @@ export default function Contact() {
             <p className="text-text-muted">@plena.clinic</p>
           </a>
 
-          <div className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100">
+          <div className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100 animate-on-scroll">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -69,8 +73,32 @@ export default function Contact() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-text-dark mb-2">Ubicación</h3>
-            <p className="text-text-muted">Calle 72 con Av 1A<br />Maracaibo, Edo. Zulia<br />Venezuela</p>
+            <p className="text-text-muted">Calle 72 con Av 1A<br />Maracaibo, Edo. Zulia</p>
           </div>
+
+          <div className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100 animate-on-scroll">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold text-text-dark mb-2">Horarios</h3>
+            <p className="text-text-muted">Lun - Sáb<br />8:30 AM - 6:30 PM</p>
+          </div>
+        </div>
+
+        <div className="mt-16 rounded-2xl overflow-hidden shadow-lg border border-gray-100 animate-on-scroll">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5!2d-71.6333!3d10.6333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDM4JzAwLjAiTiA3McKwMzgnMDAuMCJX!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Ubicación Plena Clinic"
+            className="w-full"
+          />
         </div>
       </div>
     </section>

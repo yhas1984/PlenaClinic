@@ -1,23 +1,18 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary-dark/80 to-black/70 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary-dark/75 to-black/70 z-10" />
 
-      <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-br from-amber-100 via-amber-50 to-orange-100" />
-        <div className="absolute inset-0 opacity-20">
-          <svg className="w-full h-full" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <radialGradient id="a" cx="50%" cy="50%">
-                <stop offset="0%" stopColor="#d4a843" stopOpacity="0.3" />
-                <stop offset="100%" stopColor="#b8860b" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-            <circle cx="300" cy="200" r="250" fill="url(#a)" />
-            <circle cx="900" cy="500" r="300" fill="url(#a)" />
-            <circle cx="600" cy="100" r="200" fill="url(#a)" />
-          </svg>
-        </div>
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=80"
+          alt="Clínica estética"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">

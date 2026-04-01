@@ -3,7 +3,7 @@ export default function About() {
     <section id="nosotros" className="py-24 bg-bg-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
+          <div className="animate-on-scroll">
             <p className="text-primary tracking-widest uppercase font-medium mb-3">
               Sobre Nosotros
             </p>
@@ -21,25 +21,25 @@ export default function About() {
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-1">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
                   +500
                 </p>
                 <p className="text-text-muted">Pacientes Satisfechos</p>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-2">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
                   10+
                 </p>
                 <p className="text-text-muted">Años de Experiencia</p>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-3">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
                   3
                 </p>
                 <p className="text-text-muted">Especialidades</p>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-4">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
                   100%
                 </p>
@@ -48,7 +48,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative animate-on-scroll delay-2">
             <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl aspect-square flex items-center justify-center">
               <div className="text-center p-8">
                 <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
