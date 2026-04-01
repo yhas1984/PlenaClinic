@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary-dark/75 to-black/70 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary-dark/85 to-black/75 z-10" />
 
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
