@@ -7,7 +7,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=80"
+          src="/render.jpeg"
           alt="Clínica estética"
           fill
           className="object-cover"
