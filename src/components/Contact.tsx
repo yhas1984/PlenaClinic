@@ -1,8 +1,20 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <section id="contacto" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -135,6 +147,27 @@ export default function Contact() {
                 </svg>
               </a>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-20 animate-on-scroll">
+          <div className="text-center mb-10">
+            <h3
+              className="text-3xl font-bold text-text-dark mb-3"
+              style={{ fontFamily: "var(--font-playfair)" }}
+            >
+              Agenda tu Cita Online
+            </h3>
+            <p className="text-text-muted text-lg max-w-xl mx-auto">
+              Selecciona el servicio, fecha y horario que mejor te convenga. Confirmación inmediata.
+            </p>
+          </div>
+          <div className="bg-white rounded-3xl p-4 shadow-xl border border-gray-100">
+            <div
+              className="calendly-inline-widget"
+              data-url="https://calendly.com/plenaclinicve"
+              style={{ minWidth: "320px", height: "700px" }}
+            />
           </div>
         </div>
       </div>
