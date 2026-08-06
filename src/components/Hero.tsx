@@ -7,7 +7,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
-          src="/render.jpeg"
+          src="/camara_hiperbarica.jpeg"
           alt="Clínica estética"
           fill
           className="object-cover"
