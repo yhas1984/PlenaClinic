@@ -5,6 +5,8 @@
   --primary-light: #A89888;
   --primary-dark: #5C4F43;
   --accent: #C4B5A5;
+  --gold: #B08D2E;
+  --gold-dark: #8F7023;
   --bg-cream: #F7F4F0;
   --bg-section: #EDE6DD;
   --text-dark: #2C2420;
@@ -17,6 +19,8 @@
   --color-primary-light: var(--primary-light);
   --color-primary-dark: var(--primary-dark);
   --color-accent: var(--accent);
+  --color-gold: var(--gold);
+  --color-gold-dark: var(--gold-dark);
   --color-bg-cream: var(--bg-cream);
   --color-bg-section: var(--bg-section);
   --color-text-dark: var(--text-dark);
