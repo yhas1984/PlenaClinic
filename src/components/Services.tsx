@@ -1,3 +1,5 @@
+const whatsappBase = "https://wa.me/584146421700?text=";
+
 const services = [
   {
     title: "Cirugía Plástica",
@@ -69,10 +71,10 @@ export default function Services() {
                 {service.description}
               </p>
               <a
-                href="https://wa.me/584146421700?text=Hola%2C%20me%20interesa%20información%20sobre%20"
+                href={`${whatsappBase}${encodeURIComponent(`Hola, me interesa información sobre ${service.title}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-gold font-semibold hover:gap-3 transition-all"
               >
                 Más información
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

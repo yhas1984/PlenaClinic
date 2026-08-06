@@ -1,13 +1,40 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+
+const services = [
+  "Cirugía Plástica",
+  "Medicina Estética",
+  "Oxigenación Hiperbárica",
+  "Otra consulta",
+];
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    service: services[0],
+    date: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const message = `Hola, me gustaría agendar una cita.%0ANombre: ${encodeURIComponent(
+      form.name
+    )}%0ATeléfono: ${encodeURIComponent(form.phone)}%0AServicio: ${encodeURIComponent(
+      form.service
+    )}%0AFecha: ${encodeURIComponent(form.date || "Sin fecha definida")}`;
+    window.open(`https://wa.me/584146421700?text=${message}`, "_blank");
+  };
+
+  const inputClass =
+    "w-full rounded-xl border border-gray-200 bg-bg-cream px-4 py-3 text-text-dark focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition";
+
   return (
-    <section id="contacto" className="py-24 bg-white">
+    <section id="contacto" className="py-24 bg-bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-on-scroll">
-          <p className="text-primary tracking-widest uppercase font-medium mb-3">
+          <p className="text-gold tracking-widest uppercase font-medium mb-3">
             Contáctanos
           </p>
           <h2
@@ -26,7 +53,7 @@ export default function Contact() {
             href="https://wa.me/584146421700?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
+            className="group bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
           >
             <div className="w-16 h-16 bg-whatsapp/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-whatsapp/20 transition-colors">
               <svg className="w-8 h-8 text-whatsapp" fill="currentColor" viewBox="0 0 24 24">
@@ -39,7 +66,7 @@ export default function Contact() {
 
           <a
             href="mailto:plenaclinicve@gmail.com"
-            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
+            className="group bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
           >
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
               <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +81,7 @@ export default function Contact() {
             href="https://www.instagram.com/plena.clinic"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
+            className="group bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
           >
             <div className="w-16 h-16 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:from-purple-500/20 group-hover:to-pink-500/20 transition-colors">
               <svg className="w-8 h-8 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
@@ -65,7 +92,7 @@ export default function Contact() {
             <p className="text-text-muted">@plena.clinic</p>
           </a>
 
-          <div className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100 animate-on-scroll">
+          <div className="group bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100 animate-on-scroll">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -76,7 +103,7 @@ export default function Contact() {
             <p className="text-text-muted">Calle 72 con Av 1A<br />Maracaibo, Edo. Zulia</p>
           </div>
 
-          <div className="group bg-bg-cream rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100 animate-on-scroll">
+          <div className="group bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100 animate-on-scroll">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -87,53 +114,135 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="mt-16 animate-on-scroll">
-          <div className="relative bg-white rounded-3xl p-3 shadow-xl border border-gray-100">
-            <div className="absolute -top-4 left-8 z-10 bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg flex items-center gap-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              Plena Clinic - Maracaibo
-            </div>
-            <div className="rounded-2xl overflow-hidden relative">
-              <div className="absolute inset-0 z-10 pointer-events-none rounded-2xl" style={{ boxShadow: "inset 0 0 60px rgba(184,134,11,0.08)" }} />
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5!2d-71.6333!3d10.6333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDM4JzAwLjAiTiA3McKwMzgnMDAuMCJX!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve"
-                width="100%"
-                height="450"
-                style={{ border: 0, filter: "saturate(0.7) brightness(1.05) contrast(0.95)" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación Plena Clinic"
-                className="w-full"
-              />
-            </div>
-            <div className="flex items-center justify-between px-4 py-4 bg-bg-cream rounded-b-2xl">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
+        <div className="mt-16 grid lg:grid-cols-5 gap-8">
+          <div className="lg:col-span-2 animate-on-scroll">
+            <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 h-full">
+              <h3 className="text-2xl font-bold text-text-dark mb-2" style={{ fontFamily: "var(--font-playfair)" }}>
+                Agenda tu Cita
+              </h3>
+              <p className="text-text-muted mb-8">
+                Completa tus datos y te contactaremos por WhatsApp para confirmar.
+              </p>
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-text-dark mb-1.5">
+                    Nombre completo
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    required
+                    placeholder="Tu nombre"
+                    className={inputClass}
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-text-dark text-sm">Calle 72 con Av 1A</p>
-                  <p className="text-text-muted text-xs">Maracaibo, Edo. Zulia, Venezuela</p>
+                  <label htmlFor="phone" className="block text-sm font-medium text-text-dark mb-1.5">
+                    Teléfono
+                  </label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    required
+                    placeholder="+58 412-0000000"
+                    className={inputClass}
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                  />
                 </div>
-              </div>
-              <a
-                href="https://maps.google.com/?q=Calle+72+con+Av+1A+Maracaibo+Venezuela"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors flex items-center gap-2"
-              >
-                Cómo llegar
+                <div className="grid sm:grid-cols-2 gap-5">
+                  <div>
+                    <label htmlFor="service" className="block text-sm font-medium text-text-dark mb-1.5">
+                      Servicio
+                    </label>
+                    <select
+                      id="service"
+                      className={inputClass}
+                      value={form.service}
+                      onChange={(e) => setForm({ ...form, service: e.target.value })}
+                    >
+                      {services.map((s) => (
+                        <option key={s} value={s}>
+                          {s}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="date" className="block text-sm font-medium text-text-dark mb-1.5">
+                      Fecha preferida
+                    </label>
+                    <input
+                      id="date"
+                      type="date"
+                      className={inputClass}
+                      value={form.date}
+                      onChange={(e) => setForm({ ...form, date: e.target.value })}
+                    />
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors shadow-lg shadow-gold/20"
+                >
+                  Solicitar Cita por WhatsApp
+                </button>
+                <p className="text-xs text-text-muted text-center">
+                  Al enviar se abrirá WhatsApp con tu solicitud lista para enviar.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <div className="lg:col-span-3 animate-on-scroll delay-1">
+            <div className="relative bg-white rounded-3xl p-3 shadow-xl border border-gray-100 h-full">
+              <div className="absolute -top-4 left-8 z-10 bg-gold text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg flex items-center gap-2">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-              </a>
+                Plena Clinic - Maracaibo
+              </div>
+              <div className="rounded-2xl overflow-hidden relative h-full min-h-[450px]">
+                <iframe
+                  src="https://www.google.com/maps?q=Calle+72+con+Av+1A,+Maracaibo,+Zulia,+Venezuela&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, filter: "saturate(0.7) brightness(1.05) contrast(0.95)" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación Plena Clinic"
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+              <div className="flex items-center justify-between px-4 py-4 bg-bg-cream rounded-b-2xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-text-dark text-sm">Calle 72 con Av 1A</p>
+                    <p className="text-text-muted text-xs">Maracaibo, Edo. Zulia, Venezuela</p>
+                  </div>
+                </div>
+                <a
+                  href="https://maps.google.com/?q=Calle+72+con+Av+1A+Maracaibo+Venezuela"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gold hover:bg-gold-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors flex items-center gap-2"
+                >
+                  Cómo llegar
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

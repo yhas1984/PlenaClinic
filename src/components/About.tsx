@@ -53,11 +53,11 @@ export default function About() {
           <div className="relative animate-on-scroll delay-2">
             <div className="relative rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
               <Image
-                src="/SobreNosotros.png"
+                src="/sobre-nosotros.jpeg_2K_202608062253.jpeg"
                 alt="Sobre Nosotros - Plena Clinic"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover object-top"
-                priority
               />
             </div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full" />

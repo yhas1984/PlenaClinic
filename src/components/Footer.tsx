@@ -8,13 +8,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <Image
-                src="/logo-nobg.png"
+                src="/logo-nobg.webp"
                 alt="Plena Clinic"
                 width={50}
                 height={50}
                 className="h-12 w-auto"
               />
-              <span className="text-2xl font-bold text-primary" style={{ fontFamily: "var(--font-playfair)" }}>
+              <span className="text-2xl font-bold text-accent" style={{ fontFamily: "var(--font-playfair)" }}>
                 Plena Clinic
               </span>
             </div>
