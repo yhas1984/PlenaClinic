@@ -1,20 +1,24 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary-dark/85 to-black/75 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-primary-dark/40 to-black/30 z-10" />
 
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <Image
-          src="/hyperbaric-hero.webp"
-          alt="Cámara de oxigenación hiperbárica en Plena Clinic"
-          fill
-          sizes="100vw"
-          className="object-cover"
-          priority
-          fetchPriority="high"
+        {/* Imagen base (siempre presente; respaldo y para prefers-reduced-motion) */}
+        <div
+          className="absolute inset-0 h-full w-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/hyperbaric-hero.webp')" }}
+          aria-hidden="true"
         />
+        <video
+          className="absolute inset-0 h-full w-full object-cover hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/instagram/plena_clinic/reel_DbUPdWNqslf_camara_multiplaza.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
