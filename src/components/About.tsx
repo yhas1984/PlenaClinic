@@ -25,27 +25,27 @@ export default function About() {
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-1">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
-                  +500
+                  3
                 </p>
-                <p className="text-text-muted">Pacientes Satisfechos</p>
+                <p className="text-text-muted">Especialidades Médicas</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-2">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
-                  10+
+                  Experiencia
                 </p>
-                <p className="text-text-muted">Años de Experiencia</p>
+                <p className="text-text-muted">· del Director Médico ·</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-3">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
-                  3
+                  ⌾
                 </p>
-                <p className="text-text-muted">Especialidades</p>
+                <p className="text-text-muted">Cámara Hiperbárica</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-4">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
-                  100%
+                  ♥
                 </p>
-                <p className="text-text-muted">Compromiso</p>
+                <p className="text-text-muted">Atención Personalizada</p>
               </div>
             </div>
           </div>
