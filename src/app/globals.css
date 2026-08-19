@@ -7,6 +7,7 @@
   --accent: #C4B5A5;
   --gold: #B08D2E;
   --gold-dark: #8F7023;
+  --gold-text: #7A5C14;
   --bg-cream: #F7F4F0;
   --bg-section: #EDE6DD;
   --text-dark: #2C2420;
@@ -21,6 +22,7 @@
   --color-accent: var(--accent);
   --color-gold: var(--gold);
   --color-gold-dark: var(--gold-dark);
+  --color-gold-text: var(--gold-text);
   --color-bg-cream: var(--bg-cream);
   --color-bg-section: var(--bg-section);
   --color-text-dark: var(--text-dark);
@@ -39,13 +41,19 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-.animate-on-scroll {
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.js .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-.animate-on-scroll.visible {
+.js .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -54,3 +62,18 @@ body {
 .animate-on-scroll.delay-2 { transition-delay: 0.2s; }
 .animate-on-scroll.delay-3 { transition-delay: 0.3s; }
 .animate-on-scroll.delay-4 { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-on-scroll,
+  .animate-on-scroll.delay-1,
+  .animate-on-scroll.delay-2,
+  .animate-on-scroll.delay-3,
+  .animate-on-scroll.delay-4 {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -4,6 +4,14 @@ import { useEffect } from "react";
 
 export default function useScrollAnimation() {
   useEffect(() => {
+    // Si el usuario prefiere reducir el movimiento, mostramos todo sin animar.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        el.classList.add("visible");
+      });
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

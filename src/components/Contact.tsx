@@ -34,9 +34,9 @@ export default function Contact() {
     <section id="contacto" className="py-24 bg-bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-on-scroll">
-          <p className="text-gold tracking-widest uppercase font-medium mb-3">
-            Contáctanos
-          </p>
+            <p className="text-gold-text tracking-widest uppercase font-medium mb-3">
+              Contáctanos
+            </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-text-dark mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}

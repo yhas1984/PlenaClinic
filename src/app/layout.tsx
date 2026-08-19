@@ -59,6 +59,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }}
+        />
+      </head>
       <body className={`${playfair.variable} ${inter.variable} antialiased`}>
         <script
           type="application/ld+json"

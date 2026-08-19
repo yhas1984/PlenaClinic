@@ -14,6 +14,12 @@ export default function Home() {
       <Header />
       <ScrollAnimator />
       <main>
+        <a
+          href="#inicio"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:px-5 focus:py-3 focus:rounded-lg focus:shadow-lg focus:text-primary focus:font-semibold"
+        >
+          Saltar al contenido
+        </a>
         <Hero />
         <Services />
         <About />

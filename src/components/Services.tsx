@@ -74,7 +74,7 @@ export default function Services() {
                 href={`${whatsappBase}${encodeURIComponent(`Hola, me interesa información sobre ${service.title}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gold font-semibold hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-gold-text font-semibold hover:gap-3 hover:text-gold-dark transition-all"
               >
                 Más información
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

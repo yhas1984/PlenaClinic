@@ -5,7 +5,7 @@ export default function Team() {
     <section id="equipo" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-on-scroll">
-          <p className="text-gold tracking-widest uppercase font-medium mb-3">
+          <p className="text-gold-text tracking-widest uppercase font-medium mb-3">
             Nuestro Equipo
           </p>
           <h2
@@ -31,7 +31,7 @@ export default function Team() {
           </div>
 
           <div className="animate-on-scroll delay-1">
-            <p className="text-gold tracking-widest uppercase font-medium mb-3">
+            <p className="text-gold-text tracking-widest uppercase font-medium mb-3">
               Director Médico
             </p>
             <h3
