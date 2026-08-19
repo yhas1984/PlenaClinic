@@ -66,9 +66,37 @@ button {
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 55%, rgba(0,0,0,0.25) 100%);
 }
 
+/* Hilera de galería con desplazamiento automático continuo */
+.gallery-marquee {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: gallery-scroll 60s linear infinite;
+}
+.gallery-marquee:hover {
+  animation-play-state: paused;
+}
+.gallery-item {
+  width: 20rem;
+  aspect-ratio: 9 / 16;
+}
+@keyframes gallery-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-video {
     display: none;
+  }
+  .gallery-marquee {
+    animation: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    width: 100%;
+  }
+  .gallery-item {
+    width: auto;
   }
 }
 
