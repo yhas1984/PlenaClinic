@@ -115,7 +115,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-text-dark mb-2">Horarios</h3>
-            <p className="text-text-muted">Lun - Sáb<br />8:30 AM - 6:30 PM</p>
+            <p className="text-text-muted">Lun - Sáb<br />8:00 AM - 5:30 PM</p>
           </div>
         </div>
 

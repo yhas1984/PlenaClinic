@@ -113,8 +113,8 @@ export default function RootLayout({
                   "Friday",
                   "Saturday",
                 ],
-                opens: "08:30",
-                closes: "18:30",
+                opens: "08:00",
+                closes: "17:30",
               },
               sameAs: [
                 "https://www.instagram.com/plena.clinic",

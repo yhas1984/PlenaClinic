@@ -72,7 +72,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Lun - Sáb: 8:30 AM - 6:30 PM
+                Lun - Sáb: 8:00 AM - 5:30 PM
               </li>
             </ul>
           </div>
