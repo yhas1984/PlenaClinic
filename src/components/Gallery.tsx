@@ -1,22 +1,23 @@
-import Image from "next/image";
-
-// Fotos reales verificadas de @plena.clinic (descargadas del feed).
-// Solo se incluyen las que muestran la clínica/tratamientos — se descartaron carteles de texto y selfies.
+// El feed de @plena.clinic es 100% reels/vídeos. La galería muestra los clips
+// reales (autoplay muted loop) con un poster nítido, en vez de fotos estáticas.
 const gallery = [
   {
-    src: "/instagram/plena_clinic/gal_oxigenacion.jpg",
-    alt: "Especialista en bata blanca en los espacios de oxigenación hiperbárica de Plena Clinic",
+    src: "/instagram/plena_clinic/reel_DbUPdWNqslf_camara_multiplaza.mp4",
+    poster: "/instagram/plena_clinic/gal_oxigenacion.jpg",
+    alt: "Cámara hiperbárica de oxigenación de Plena Clinic",
     label: "Oxigenación Hiperbárica",
   },
   {
-    src: "/instagram/plena_clinic/gal_equipo.jpg",
-    alt: "Dr. Toufic Ghattas en el consultorio de Plena Clinic",
-    label: "Nuestro Equipo",
+    src: "/instagram/plena_clinic/reel_DbLaPlZKzRY_nueva_sede.mp4",
+    poster: "/instagram/plena_clinic/gal_equipo.jpg",
+    alt: "Plena Clinic — nueva sede y equipo",
+    label: "Nuestro Espacio",
   },
   {
-    src: "/instagram/plena_clinic/gal_tecnologia.jpg",
-    alt: "Especialista junto al equipo de la cámara hiperbárica de Plena Clinic",
-    label: "Tecnología de Punta",
+    src: "/instagram/plena_clinic/reel_DbYTj6xKZB2_dra_nathalie.mp4",
+    poster: "/instagram/plena_clinic/gal_tecnologia.jpg",
+    alt: "Especialista explicando la terapia de oxigenación en Plena Clinic",
+    label: "Terapia Hiperbárica",
   },
 ];
 
@@ -35,22 +36,25 @@ export default function Gallery() {
             Conoce Plena Clinic
           </h2>
           <p className="text-text-muted text-lg max-w-2xl mx-auto">
-            Nuestras instalaciones y tecnología al servicio de tu bienestar.
+            Nuestras instalaciones y terapia de oxigenación hiperbárica en vídeo.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {gallery.map((item, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl overflow-hidden aspect-square animate-on-scroll"
+              className="group relative rounded-2xl overflow-hidden aspect-video md:aspect-[9/16] animate-on-scroll"
             >
-              <Image
+              <video
+                className="absolute inset-0 h-full w-full object-cover"
                 src={item.src}
-                alt={item.alt}
-                fill
-                sizes="(min-width: 768px) 33vw, 50vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                poster={item.poster}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <p className="absolute bottom-3 left-3 right-3 text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
