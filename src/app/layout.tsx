@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const inter = Inter({
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.plenaclinic.com"),
   title: "Plena Clinic - Cirugía Plástica y Medicina Estética en Maracaibo",
   description:
-    "Clínica estética en Maracaibo, Edo. Zulia. Especialistas en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica. Tu belleza, nuestra pasión.",
+    "Centro médico estético en Maracaibo, Edo. Zulia. Especialistas en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica. Tu belleza, nuestra pasión.",
   keywords:
     "cirugía plástica, medicina estética, oxigenación hiperbárica, cámara hiperbárica, clínica estética, estética Maracaibo, cirujano plástico Zulia, Venezuela",
   alternates: {
@@ -76,7 +77,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }}
         />
       </head>
-      <body className={`${playfair.variable} ${inter.variable} antialiased`}>
+      <body className={`${cormorant.variable} ${inter.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -85,7 +86,7 @@ export default function RootLayout({
               "@type": "MedicalClinic",
               name: "Plena Clinic",
               description:
-                "Clínica estética en Maracaibo especializada en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica.",
+                "Centro médico estético en Maracaibo especializado en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica.",
               url: "https://www.plenaclinic.com",
               telephone: "+584244794577",
               email: "plenaclinicve@gmail.com",

@@ -14,11 +14,11 @@ export default function Hero() {
           <div className="max-w-xl animate-on-scroll">
             <p className="inline-flex items-center gap-2 mb-4 text-gold-dark font-medium uppercase tracking-[0.2em] text-xs sm:text-sm">
               <span className="h-px w-8 bg-gold-dark" />
-              Clínica Estética en Maracaibo
+              Centro Médico Estético en Maracaibo
             </p>
             <h1
               className="text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-text-dark mb-5 leading-[1.1]"
-              style={{ fontFamily: "var(--font-playfair)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Tu Belleza, <span className="text-primary">Nuestra Pasión</span>
             </h1>
@@ -48,10 +48,10 @@ export default function Hero() {
           {/* Vídeo en tarjeta vertical elegante */}
           <div className="relative animate-on-scroll delay-1 justify-self-center w-full max-w-[300px] lg:max-w-[340px]">
             <div className="relative rounded-3xl overflow-hidden aspect-[9/16] shadow-2xl shadow-primary/20 ring-1 ring-white/60">
-              {/* Poster / respaldo */}
+              {/* Poster / respaldo (fotograma limpio sin texto impreso) */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/hyperbaric-hero.webp')" }}
+                style={{ backgroundImage: "url('/instagram/plena_clinic/gal_oxigenacion.jpg')" }}
                 aria-hidden="true"
               />
               <video
@@ -72,7 +72,7 @@ export default function Hero() {
             {/* Etiqueta flotante */}
             <div className="absolute -right-3 -bottom-3 rounded-2xl bg-white/90 backdrop-blur px-5 py-3 shadow-lg ring-1 ring-white/60">
               <p className="text-xs text-text-muted mb-0.5">Oxigenación</p>
-              <p className="text-sm font-semibold text-primary" style={{ fontFamily: "var(--font-playfair)" }}>
+              <p className="text-sm font-semibold text-primary" style={{ fontFamily: "var(--font-display)" }}>
                 Hiperbárica
               </p>
             </div>

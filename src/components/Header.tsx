@@ -53,7 +53,7 @@ export default function Header() {
               className="h-12 w-auto"
               priority
             />
-            <span className="text-2xl font-bold text-primary" style={{ fontFamily: "var(--font-playfair)" }}>
+            <span className="text-2xl font-bold text-primary" style={{ fontFamily: "var(--font-display)" }}>
               Plena Clinic
             </span>
           </a>

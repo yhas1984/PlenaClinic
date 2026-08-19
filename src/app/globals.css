@@ -40,8 +40,8 @@ section[id] {
   scroll-margin-top: 5rem;
 }
 
-/* Refinamiento tipográfico: los títulos Playfair con un poco más de aire */
-.font-playfair {
+/* Refinamiento tipográfico: los títulos Cormorant Garamond con un poco más de aire */
+.font-display {
   letter-spacing: -0.01em;
   text-wrap: balance;
 }

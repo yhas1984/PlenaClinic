@@ -43,7 +43,7 @@ export default function Services() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-text-dark mb-6"
-            style={{ fontFamily: "var(--font-playfair)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Tratamientos Especializados
           </h2>
@@ -63,7 +63,7 @@ export default function Services() {
               </div>
               <h3
                 className="text-2xl font-bold text-text-dark mb-4"
-                style={{ fontFamily: "var(--font-playfair)" }}
+                style={{ fontFamily: "var(--font-display)" }}
               >
                 {service.title}
               </h3>

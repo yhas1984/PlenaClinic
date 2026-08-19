@@ -44,7 +44,7 @@ export default function Contact() {
             </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-text-dark mb-6"
-            style={{ fontFamily: "var(--font-playfair)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Estamos Para Ti
           </h2>
@@ -122,7 +122,7 @@ export default function Contact() {
         <div className="mt-16 grid lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2 animate-on-scroll">
             <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 h-full">
-              <h3 className="text-2xl font-bold text-text-dark mb-2" style={{ fontFamily: "var(--font-playfair)" }}>
+              <h3 className="text-2xl font-bold text-text-dark mb-2" style={{ fontFamily: "var(--font-display)" }}>
                 Agenda tu Cita
               </h3>
               <p className="text-text-muted mb-8">

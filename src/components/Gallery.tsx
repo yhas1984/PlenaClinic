@@ -60,7 +60,7 @@ export default function Gallery() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-text-dark mb-6"
-            style={{ fontFamily: "var(--font-playfair)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Conoce Plena Clinic
           </h2>

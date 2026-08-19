@@ -31,7 +31,7 @@ export default function Testimonials() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-text-dark mb-6"
-            style={{ fontFamily: "var(--font-playfair)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             La Confianza de Nuestros Pacientes
           </h2>

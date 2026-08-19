@@ -14,12 +14,12 @@ export default function Footer() {
                 height={50}
                 className="h-12 w-auto"
               />
-              <span className="text-2xl font-bold text-accent" style={{ fontFamily: "var(--font-playfair)" }}>
+              <span className="text-2xl font-bold text-accent" style={{ fontFamily: "var(--font-display)" }}>
                 Plena Clinic
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Tu belleza, nuestra pasión. Clínica estética especializada en Maracaibo, Venezuela.
+              Tu belleza, nuestra pasión. Centro médico estético especializado en Maracaibo, Venezuela.
             </p>
           </div>
 

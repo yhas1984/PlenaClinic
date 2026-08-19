@@ -10,7 +10,7 @@ export default function Team() {
           </p>
           <h2
             className="text-4xl sm:text-5xl font-bold text-text-dark mb-6"
-            style={{ fontFamily: "var(--font-playfair)" }}
+            style={{ fontFamily: "var(--font-display)" }}
           >
             Profesionales de Confianza
           </h2>
@@ -36,7 +36,7 @@ export default function Team() {
             </p>
             <h3
               className="text-3xl sm:text-4xl font-bold text-text-dark mb-3"
-              style={{ fontFamily: "var(--font-playfair)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Dr. Toufic Ghattas
             </h3>

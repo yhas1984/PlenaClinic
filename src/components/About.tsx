@@ -11,7 +11,7 @@ export default function About() {
             </p>
             <h2
               className="text-4xl sm:text-5xl font-bold text-text-dark mb-6"
-              style={{ fontFamily: "var(--font-playfair)" }}
+              style={{ fontFamily: "var(--font-display)" }}
             >
               Excelencia en Medicina Estética
             </h2>
@@ -24,25 +24,25 @@ export default function About() {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-1">
-                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
+                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-display)" }}>
                   3
                 </p>
                 <p className="text-text-muted">Especialidades Médicas</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-2">
-                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
+                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-display)" }}>
                   13+
                 </p>
                 <p className="text-text-muted">Años Cirujano Plástico</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-3">
-                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
+                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-display)" }}>
                   ⌾
                 </p>
                 <p className="text-text-muted">Cámara Hiperbárica</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-4">
-                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
+                <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-display)" }}>
                   ♥
                 </p>
                 <p className="text-text-muted">Atención Personalizada</p>
