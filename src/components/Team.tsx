@@ -1,5 +1,35 @@
 import Image from "next/image";
 
+// Miembros con cargo real. Los que aún no tienen foto usan avatar de iniciales.
+const members = [
+  {
+    initials: "NA",
+    name: "Dra. Nathalie Aboultaif",
+    role: "Otorrinolaringóloga",
+    extra: "Maestría en Medicina Hiperbárica",
+  },
+  {
+    initials: "JV",
+    name: "Lcda. Jhoannys Vera",
+    role: "Enfermera",
+  },
+  {
+    initials: "KM",
+    name: "Lcda. Karen Marín",
+    role: "Mesoterapeuta",
+  },
+];
+
+function InitialsAvatar({ initials }: { initials: string }) {
+  return (
+    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-gold/20 to-primary/10 flex items-center justify-center ring-1 ring-gold/30 mx-auto">
+      <span className="text-3xl font-semibold text-primary" style={{ fontFamily: "var(--font-display)" }}>
+        {initials}
+      </span>
+    </div>
+  );
+}
+
 export default function Team() {
   return (
     <section id="equipo" className="py-24 bg-white">
@@ -19,7 +49,8 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Director Médico — destacado */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative rounded-3xl overflow-hidden aspect-[16/10] shadow-xl animate-on-scroll">
             <Image
               src="/DrToufic.webp"
@@ -93,6 +124,28 @@ export default function Team() {
               </svg>
             </a>
           </div>
+        </div>
+
+        {/* Resto del equipo */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {members.map((m, i) => (
+            <div
+              key={m.name}
+              className={`bg-bg-cream rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 animate-on-scroll delay-${i + 1}`}
+            >
+              <div className="mb-5">
+                <InitialsAvatar initials={m.initials} />
+              </div>
+              <h3
+                className="text-xl font-bold text-text-dark mb-1"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {m.name}
+              </h3>
+              <p className="text-gold font-semibold mb-1">{m.role}</p>
+              {m.extra && <p className="text-text-muted text-sm">{m.extra}</p>}
+            </div>
+          ))}
         </div>
       </div>
     </section>
