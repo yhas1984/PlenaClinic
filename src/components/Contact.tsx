@@ -66,7 +66,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-text-dark mb-2">WhatsApp</h3>
-            <p className="text-text-muted">+58 424-794577</p>
+            <p className="text-text-muted">+58 424-4794577</p>
           </a>
 
           <a

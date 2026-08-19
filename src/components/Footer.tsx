@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li>
                 <a href="https://wa.me/584244794577" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  +58 424-794577
+                  +58 424-4794577
                 </a>
               </li>
               <li>
