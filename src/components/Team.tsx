@@ -3,7 +3,7 @@ import Image from "next/image";
 // Miembros con cargo real. Los que aún no tienen foto usan avatar de iniciales.
 const members = [
   {
-    initials: "NA",
+    photo: "/team/dra_nathalie_300.jpg",
     name: "Dra. Nathalie Aboultaif",
     role: "Otorrinolaringóloga",
     extra: "Maestría en Medicina Hiperbárica",
@@ -28,6 +28,23 @@ function InitialsAvatar({ initials }: { initials: string }) {
       </span>
     </div>
   );
+}
+
+function MemberAvatar({ m }: { m: (typeof members)[number] }) {
+  if (m.photo) {
+    return (
+      <div className="w-24 h-24 rounded-full overflow-hidden ring-2 ring-gold/30 mx-auto shadow-lg">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={m.photo}
+          alt={m.name}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+    );
+  }
+  return <InitialsAvatar initials={m.initials!} />;
 }
 
 export default function Team() {
@@ -134,7 +151,7 @@ export default function Team() {
               className={`bg-bg-cream rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 animate-on-scroll delay-${i + 1}`}
             >
               <div className="mb-5">
-                <InitialsAvatar initials={m.initials} />
+                <MemberAvatar m={m} />
               </div>
               <h3
                 className="text-xl font-bold text-text-dark mb-1"
