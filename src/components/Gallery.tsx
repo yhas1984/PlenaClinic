@@ -1,5 +1,7 @@
+import LazyVideo from "@/components/LazyVideo";
+
 // El feed de @plena.clinic es 100% reels/vídeos. La galería muestra los clips
-// reales (autoplay muted loop) con un poster nítido, en vez de fotos estáticas.
+// reales con lazy-load (solo cargan/reproducen al estar visibles) + poster nítido.
 const gallery = [
   {
     src: "/instagram/plena_clinic/reel_DbUPdWNqslf_camara_multiplaza.mp4",
@@ -46,16 +48,7 @@ export default function Gallery() {
               key={index}
               className="group relative rounded-2xl overflow-hidden aspect-video md:aspect-[9/16] animate-on-scroll"
             >
-              <video
-                className="absolute inset-0 h-full w-full object-cover"
-                src={item.src}
-                poster={item.poster}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              />
+              <LazyVideo src={item.src} poster={item.poster} alt={item.alt} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <p className="absolute bottom-3 left-3 right-3 text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {item.label}
