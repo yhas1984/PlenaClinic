@@ -214,7 +214,7 @@ export default function Contact() {
               </div>
               <div className="rounded-2xl overflow-hidden relative h-full min-h-[450px]">
                 <iframe
-                  src="https://www.google.com/maps?q=10.6685868,-71.6222579&z=17&hl=es&output=embed"
+                  src="https://www.google.com/maps?q=Plena+Clinic+Maracaibo&z=17&hl=es&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "saturate(0.7) brightness(1.05) contrast(0.95)" }}
