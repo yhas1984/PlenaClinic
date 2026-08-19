@@ -7,12 +7,13 @@ export default function Hero() {
 
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
-          src="/Hyperbaric_chamber_on_wooden_floor_202608062243.jpeg"
+          src="/hyperbaric-hero.webp"
           alt="Cámara de oxigenación hiperbárica en Plena Clinic"
           fill
           sizes="100vw"
           className="object-cover"
           priority
+          fetchPriority="high"
         />
       </div>
 

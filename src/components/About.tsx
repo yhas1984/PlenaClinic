@@ -53,7 +53,7 @@ export default function About() {
           <div className="relative animate-on-scroll delay-2">
             <div className="relative rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
               <Image
-                src="/sobre-nosotros.jpeg_2K_202608062253.jpeg"
+                src="/sobre-nosotros.webp"
                 alt="Sobre Nosotros - Plena Clinic"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
