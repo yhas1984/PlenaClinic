@@ -166,7 +166,7 @@ export default function RootLayout({
               image: "https://www.plenaclinic.com/DrToufic.webp",
               medicalSpecialty: "PlasticSurgery",
               description:
-                "Médico Cirujano, Director Médico de Plena Clinic, especializado en cirugía plástica, estética y reconstructiva en Maracaibo, Venezuela.",
+                "Cirujano plástico, Director Médico de Plena Clinic, con 13 años de experiencia en cirugía plástica, estética y reconstructiva en Maracaibo, Venezuela.",
               url: "https://www.plenaclinic.com/#equipo",
               telephone: "+584244794577",
               address: {

@@ -23,7 +23,7 @@ export default function Team() {
           <div className="relative rounded-3xl overflow-hidden aspect-[16/10] shadow-xl animate-on-scroll">
             <Image
               src="/DrToufic.webp"
-              alt="Dr. Toufic Ghattas - Médico Cirujano"
+              alt="Dr. Toufic Ghattas - Cirujano Plástico"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
@@ -40,9 +40,9 @@ export default function Team() {
             >
               Dr. Toufic Ghattas
             </h3>
-            <p className="text-gold font-semibold mb-6 text-lg">Médico Cirujano</p>
+            <p className="text-gold font-semibold mb-6 text-lg">Cirujano Plástico</p>
             <p className="text-text-muted text-lg leading-relaxed mb-6">
-              Médico cirujano con amplia experiencia en cirugía plástica, estética y
+              Cirujano plástico con 13 años de experiencia en cirugía plástica, estética y
               reconstructiva. Su enfoque combina técnica quirúrgica de precisión con un
               trato humano y personalizado, priorizando siempre la seguridad y los
               resultados naturales de cada paciente.

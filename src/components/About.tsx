@@ -31,9 +31,9 @@ export default function About() {
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-2">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
-                  Experiencia
+                  13+
                 </p>
-                <p className="text-text-muted">· del Director Médico ·</p>
+                <p className="text-text-muted">Años Cirujano Plástico</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-3">
                 <p className="text-3xl font-bold text-primary mb-1" style={{ fontFamily: "var(--font-playfair)" }}>
