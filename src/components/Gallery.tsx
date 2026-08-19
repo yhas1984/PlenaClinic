@@ -1,6 +1,8 @@
 import LazyVideo from "@/components/LazyVideo";
 
-// Los 9 vídeos del feed de @plena.clinic (7 propios + 2 de colaboradores).
+// Vídeos del feed de @plena.clinic (7 propios + 2 de colaboradores).
+// Nota: reel_DbUPdWNqslf (Cámara Multiplaza) NO se incluye aquí porque ya
+// está en el hero — evitamos duplicarlo.
 // Se muestran en una hilera horizontal con desplazamiento automático continuo.
 const videos = [
   {
@@ -17,11 +19,6 @@ const videos = [
     src: "/instagram/plena_clinic/reel_DbqGZcRq91p_1semana.mp4",
     poster: "/instagram/plena_clinic/poster_reel_DbqGZcRq91p_1semana.jpg",
     alt: "Primera semana de Plena Clinic",
-  },
-  {
-    src: "/instagram/plena_clinic/reel_DbUPdWNqslf_camara_multiplaza.mp4",
-    poster: "/instagram/plena_clinic/poster_reel_DbUPdWNqslf_camara_multiplaza.jpg",
-    alt: "Cámara de oxigenación hiperbárica Multiplaza de Plena Clinic",
   },
   {
     src: "/instagram/plena_clinic/reel_DbYTj6xKZB2_dra_nathalie.mp4",
