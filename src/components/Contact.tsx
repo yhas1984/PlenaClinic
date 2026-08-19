@@ -16,15 +16,20 @@ export default function Contact() {
     service: services[0],
     date: "",
   });
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Hola, me gustaría agendar una cita.%0ANombre: ${encodeURIComponent(
-      form.name
-    )}%0ATeléfono: ${encodeURIComponent(form.phone)}%0AServicio: ${encodeURIComponent(
-      form.service
-    )}%0AFecha: ${encodeURIComponent(form.date || "Sin fecha definida")}`;
+    const lines = [
+      "Hola, me gustaría agendar una cita en Plena Clinic.",
+      `Nombre: ${form.name}`,
+      `Teléfono: ${form.phone}`,
+      `Servicio: ${form.service}`,
+      `Fecha preferida: ${form.date || "Sin fecha definida"}`,
+    ];
+    const message = encodeURIComponent(lines.join("\n"));
     window.open(`https://wa.me/584146421700?text=${message}`, "_blank");
+    setSent(true);
   };
 
   const inputClass =
@@ -190,7 +195,9 @@ export default function Contact() {
                   Solicitar Cita por WhatsApp
                 </button>
                 <p className="text-xs text-text-muted text-center">
-                  Al enviar se abrirá WhatsApp con tu solicitud lista para enviar.
+                  {sent
+                    ? "✓ Se abrió WhatsApp con tu solicitud lista para enviar."
+                    : "Al enviar se abrirá WhatsApp con tu solicitud lista para enviar."}
                 </p>
               </form>
             </div>

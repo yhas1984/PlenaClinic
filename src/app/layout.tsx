@@ -86,6 +86,11 @@ export default function RootLayout({
                 addressRegion: "Zulia",
                 addressCountry: "VE",
               },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 10.6556,
+                longitude: -71.6323,
+              },
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: [
@@ -102,6 +107,59 @@ export default function RootLayout({
               sameAs: [
                 "https://www.instagram.com/plena.clinic",
                 "https://wa.me/584146421700",
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Physician",
+              name: "Dr. Toufic Ghattas",
+              image: "https://www.plenaclinic.com/DrToufic.webp",
+              medicalSpecialty: "PlasticSurgery",
+              description:
+                "Médico Cirujano, Director Médico de Plena Clinic, especializado en cirugía plástica, estética y reconstructiva en Maracaibo, Venezuela.",
+              url: "https://www.plenaclinic.com/#equipo",
+              telephone: "+584146421700",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Maracaibo",
+                addressRegion: "Zulia",
+                addressCountry: "VE",
+              },
+              worksFor: {
+                "@type": "MedicalClinic",
+                name: "Plena Clinic",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "¿Qué es una cámara de oxigenación hiperbárica?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Es una terapia que consiste en respirar oxígeno puro dentro de una cámara a presión superior a la atmosférica. Favorece la oxigenación de los tejidos, acelera la cicatrización y potencia la recuperación post-quirúrgica y el bienestar general.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Cómo solicito una cita en Plena Clinic?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Puedes escribirnos por WhatsApp o completar el formulario de la sección de contacto. Te atenderemos para responder tus dudas y agendar tu consulta según la disponibilidad.",
+                  },
+                },
               ],
             }),
           }}
