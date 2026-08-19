@@ -214,7 +214,7 @@ export default function Contact() {
               </div>
               <div className="rounded-2xl overflow-hidden relative h-full min-h-[450px]">
                 <iframe
-                  src="https://www.google.com/maps?q=Calle+72+entre+Av+15A+y+16,+Maracaibo,+Zulia,+Venezuela&output=embed"
+                  src="https://www.google.com/maps?q=10.6685868,-71.6222579&z=17&hl=es&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "saturate(0.7) brightness(1.05) contrast(0.95)" }}
@@ -239,7 +239,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Calle+72+entre+Av+15A+y+16+Maracaibo+Venezuela"
+                  href="https://www.google.com/maps/dir/?api=1&destination=10.6685868,-71.6222579"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gold hover:bg-gold-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors flex items-center gap-2"
