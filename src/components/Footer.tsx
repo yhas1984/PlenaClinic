@@ -67,7 +67,7 @@ export default function Footer() {
                   @plena.clinic
                 </a>
               </li>
-              <li>Calle 72 con Av 1A, Maracaibo, Edo. Zulia</li>
+              <li>Calle 72 entre Av 15A y 16, Maracaibo, Edo. Zulia</li>
               <li className="pt-2 flex items-center gap-2">
                 <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

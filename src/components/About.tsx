@@ -19,7 +19,7 @@ export default function About() {
               En <strong className="text-text-dark">Plena Clinic</strong> nos dedicamos a realzar tu belleza natural con los más altos estándares de calidad y seguridad. Nuestro equipo de profesionales altamente calificados combina experiencia, tecnología de vanguardia y un enfoque personalizado para cada paciente.
             </p>
             <p className="text-text-muted text-lg leading-relaxed mb-8">
-               Ubicados en Calle 72 con Av 1A, Maracaibo, Edo. Zulia, somos referentes en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica en la región. Tu satisfacción y bienestar son nuestra prioridad.
+               Ubicados en Calle 72 entre Av 15A y 16, Maracaibo, Edo. Zulia, somos referentes en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica en la región. Tu satisfacción y bienestar son nuestra prioridad.
             </p>
 
             <div className="grid grid-cols-2 gap-6">

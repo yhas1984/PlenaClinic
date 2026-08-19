@@ -105,7 +105,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-text-dark mb-2">Ubicación</h3>
-            <p className="text-text-muted">Calle 72 con Av 1A<br />Maracaibo, Edo. Zulia</p>
+            <p className="text-text-muted">Calle 72 entre Av 15A y 16<br />Maracaibo, Edo. Zulia</p>
           </div>
 
           <div className="group bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all border border-gray-100 animate-on-scroll">
@@ -214,7 +214,7 @@ export default function Contact() {
               </div>
               <div className="rounded-2xl overflow-hidden relative h-full min-h-[450px]">
                 <iframe
-                  src="https://www.google.com/maps?q=Calle+72+con+Av+1A,+Maracaibo,+Zulia,+Venezuela&output=embed"
+                  src="https://www.google.com/maps?q=Calle+72+entre+Av+15A+y+16,+Maracaibo,+Zulia,+Venezuela&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "saturate(0.7) brightness(1.05) contrast(0.95)" }}
@@ -234,12 +234,12 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold text-text-dark text-sm">Calle 72 con Av 1A</p>
+                    <p className="font-semibold text-text-dark text-sm">Calle 72 entre Av 15A y 16</p>
                     <p className="text-text-muted text-xs">Maracaibo, Edo. Zulia, Venezuela</p>
                   </div>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Calle+72+con+Av+1A+Maracaibo+Venezuela"
+                  href="https://maps.google.com/?q=Calle+72+entre+Av+15A+y+16+Maracaibo+Venezuela"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gold hover:bg-gold-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors flex items-center gap-2"

@@ -81,7 +81,7 @@ export default function RootLayout({
               priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Calle 72 con Av 1A",
+                streetAddress: "Calle 72 entre Av 15A y 16",
                 addressLocality: "Maracaibo",
                 addressRegion: "Zulia",
                 addressCountry: "VE",
