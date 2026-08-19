@@ -4,18 +4,18 @@ import Image from "next/image";
 // Solo se incluyen las que muestran la clínica/tratamientos — se descartaron carteles de texto y selfies.
 const gallery = [
   {
-    src: "/instagram/plena_clinic/772602614.jpg",
-    alt: "Especialista en bata blanca en la cámara de oxigenación hiperbárica de Plena Clinic",
+    src: "/instagram/plena_clinic/gal_oxigenacion.jpg",
+    alt: "Especialista en bata blanca en los espacios de oxigenación hiperbárica de Plena Clinic",
     label: "Oxigenación Hiperbárica",
   },
   {
-    src: "/instagram/plena_clinic/753306125.jpg",
+    src: "/instagram/plena_clinic/gal_equipo.jpg",
     alt: "Dr. Toufic Ghattas en el consultorio de Plena Clinic",
     label: "Nuestro Equipo",
   },
   {
-    src: "/instagram/plena_clinic/756814500.jpg",
-    alt: "Equipo de la cámara hiperbárica y especialista de Plena Clinic",
+    src: "/instagram/plena_clinic/gal_tecnologia.jpg",
+    alt: "Especialista junto al equipo de la cámara hiperbárica de Plena Clinic",
     label: "Tecnología de Punta",
   },
 ];
