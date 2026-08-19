@@ -28,17 +28,36 @@
   --color-text-dark: var(--text-dark);
   --color-text-muted: var(--text-muted);
   --color-whatsapp: var(--whatsapp);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* Compensar el header fijo (h-20) al navegar por anclas */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Refinamiento tipográfico: los títulos Playfair con un poco más de aire */
+.font-playfair {
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
 body {
   background: var(--bg-cream);
   color: var(--text-dark);
   font-family: var(--font-sans), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Estados interactivos coherentes para enlaces y botones */
+a,
+button {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :focus-visible {
