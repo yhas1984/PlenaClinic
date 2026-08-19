@@ -22,45 +22,39 @@ export default function Hero() {
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="max-w-3xl">
-          <p className="text-accent text-lg sm:text-xl mb-4 tracking-widest uppercase font-medium">
+        <div className="max-w-2xl">
+          <p className="inline-flex items-center gap-2 mb-5 text-gold-dark font-medium uppercase tracking-[0.2em] text-sm">
+            <span className="h-px w-8 bg-gold-dark" />
             Clínica Estética en Maracaibo
           </p>
           <h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Tu Belleza, Nuestra Pasión
           </h1>
-          <p className="text-xl sm:text-2xl text-white/80 mb-10 leading-relaxed max-w-2xl">
-            Especialistas en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica. Resultados naturales con la más alta calidad.
+          <p className="text-lg text-white/85 max-w-xl mb-8">
+            Especialistas en cirugía plástica, medicina estética y terapia de
+            oxigenación hiperbárica. Resultados naturales con la más alta calidad.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-wrap gap-4">
             <a
-              href="https://wa.me/584146421700?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20en%20Plena%20Clinic"
+              href="https://wa.me/584244794577?text=Hola%20Plena%20Clinic%2C%20quiero%20agendar%20una%20cita"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-whatsapp hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg hover:shadow-green-500/30 flex items-center justify-center gap-3"
+              className="inline-flex items-center gap-2 rounded-full bg-[#25d366] text-white px-6 py-3 font-semibold hover:opacity-90 transition-opacity"
             >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-              </svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.59-.49-.51-.67-.52h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 3.9 5.95 9.44 8.34 1.32.57 1.83.46 2.16.44.66-.07 2.03-.83 2.32-1.63.29-.8.29-1.49.2-1.63-.08-.15-.3-.24-.6-.39z"/><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.18-2.9.83.87-2.83-.2-.3A8 8 0 1 1 12 20z"/></svg>
               Agendar por WhatsApp
             </a>
             <a
               href="#servicios"
-              className="border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-white/10 flex items-center justify-center"
+              className="inline-flex items-center rounded-full border border-white/60 text-white px-6 py-3 font-medium hover:bg-white/10 transition-colors"
             >
               Ver Servicios
             </a>
           </div>
         </div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-        <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
       </div>
     </section>
   );

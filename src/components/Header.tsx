@@ -69,7 +69,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="https://wa.me/584146421700"
+              href="https://wa.me/584244794577"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gold hover:bg-gold-dark text-white px-6 py-2.5 rounded-full transition-colors font-medium"
@@ -114,7 +114,7 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="https://wa.me/584146421700"
+                href="https://wa.me/584244794577"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gold hover:bg-gold-dark text-white px-6 py-3 rounded-full transition-colors font-medium text-center"

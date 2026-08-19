@@ -1,7 +1,7 @@
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/584146421700?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20en%20Plena%20Clinic"
+      href="https://wa.me/584244794577?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20en%20Plena%20Clinic"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-whatsapp hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"

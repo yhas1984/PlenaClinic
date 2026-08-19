@@ -53,8 +53,8 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="https://wa.me/584146421700" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  +58 414-6421700
+                <a href="https://wa.me/584244794577" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  +58 424-794577
                 </a>
               </li>
               <li>

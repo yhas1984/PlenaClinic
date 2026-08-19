@@ -1,4 +1,4 @@
-const whatsappBase = "https://wa.me/584146421700?text=";
+const whatsappBase = "https://wa.me/584244794577?text=";
 
 const services = [
   {

@@ -72,7 +72,7 @@ export default function Team() {
               ))}
             </ul>
             <a
-              href="https://wa.me/584146421700?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20con%20el%20Dr.%20Toufic%20Ghattas"
+              href="https://wa.me/584244794577?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20con%20el%20Dr.%20Toufic%20Ghattas"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors shadow-lg shadow-gold/20"

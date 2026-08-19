@@ -28,7 +28,7 @@ export default function Contact() {
       `Fecha preferida: ${form.date || "Sin fecha definida"}`,
     ];
     const message = encodeURIComponent(lines.join("\n"));
-    window.open(`https://wa.me/584146421700?text=${message}`, "_blank");
+    window.open(`https://wa.me/584244794577?text=${message}`, "_blank");
     setSent(true);
   };
 
@@ -55,7 +55,7 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           <a
-            href="https://wa.me/584146421700?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita"
+            href="https://wa.me/584244794577?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all hover:-translate-y-1 border border-gray-100 animate-on-scroll"
@@ -66,7 +66,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-text-dark mb-2">WhatsApp</h3>
-            <p className="text-text-muted">+58 414-6421700</p>
+            <p className="text-text-muted">+58 424-794577</p>
           </a>
 
           <a

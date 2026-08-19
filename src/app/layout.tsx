@@ -18,10 +18,22 @@ export const metadata: Metadata = {
   description:
     "Clínica estética en Maracaibo, Edo. Zulia. Especialistas en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica. Tu belleza, nuestra pasión.",
   keywords:
-    "cirugía plástica, medicina estética, oxigenación hiperbárica, clínica estética, Maracaibo, Venezuela",
+    "cirugía plástica, medicina estética, oxigenación hiperbárica, cámara hiperbárica, clínica estética, estética Maracaibo, cirujano plástico Zulia, Venezuela",
   alternates: {
     canonical: "/",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "health",
   icons: {
     icon: [{ url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }],
     apple: "/apple-touch-icon.png",
@@ -75,7 +87,7 @@ export default function RootLayout({
               description:
                 "Clínica estética en Maracaibo especializada en cirugía plástica, medicina estética y terapia de oxigenación hiperbárica.",
               url: "https://www.plenaclinic.com",
-              telephone: "+584146421700",
+              telephone: "+584244794577",
               email: "plenaclinicve@gmail.com",
               image: "https://www.plenaclinic.com/og-image.png",
               priceRange: "$$",
@@ -106,8 +118,41 @@ export default function RootLayout({
               },
               sameAs: [
                 "https://www.instagram.com/plena.clinic",
-                "https://wa.me/584146421700",
+                "https://wa.me/584244794577",
               ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Servicios de Plena Clinic",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalProcedure",
+                      name: "Cirugía Plástica",
+                      description:
+                        "Procedimientos quirúrgicos de alta calidad con resultados naturales.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalProcedure",
+                      name: "Medicina Estética",
+                      description:
+                        "Tratamientos no invasivos: Botox, ácido hialurónico, bioestimuladores.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalTherapy",
+                      name: "Oxigenación Hiperbárica",
+                      description:
+                        "Terapia con oxígeno a presión para acelerar la recuperación y el bienestar.",
+                    },
+                  },
+                ],
+              },
             }),
           }}
         />
@@ -123,7 +168,7 @@ export default function RootLayout({
               description:
                 "Médico Cirujano, Director Médico de Plena Clinic, especializado en cirugía plástica, estética y reconstructiva en Maracaibo, Venezuela.",
               url: "https://www.plenaclinic.com/#equipo",
-              telephone: "+584146421700",
+              telephone: "+584244794577",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Maracaibo",
