@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { faqs } from "@/data/faqs";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const cormorant = Cormorant_Garamond({
@@ -191,24 +192,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "¿Qué es una cámara de oxigenación hiperbárica?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Es una terapia que consiste en respirar oxígeno puro dentro de una cámara a presión superior a la atmosférica. Favorece la oxigenación de los tejidos, acelera la cicatrización y potencia la recuperación post-quirúrgica y el bienestar general.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "¿Cómo solicito una cita en Plena Clinic?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Puedes escribirnos por WhatsApp o completar el formulario de la sección de contacto. Te atenderemos para responder tus dudas y agendar tu consulta según la disponibilidad.",
-                  },
-                },
-              ],
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
             }),
           }}
         />
